@@ -282,13 +282,22 @@ h2 {
 /* ---- Venue / Registration ---- */
 .maplink { font-weight: 600; }
 
+/* ---- Call for Papers ---- */
+.cfp-grid { display: grid; grid-template-columns: 1.55fr 1fr; gap: 28px; align-items: start; }
+#panel-cfp .prose { max-width: none; }
+.factlist { margin: 0; font-size: 0.93rem; }
+.factlist > div { display: grid; grid-template-columns: 100px 1fr; gap: 0 14px; padding: 7px 0; border-top: 1px solid var(--hairline); }
+.factlist > div:first-child { border-top: 0; padding-top: 0; }
+.factlist dt { font-weight: 600; color: var(--muted); }
+.factlist dd { margin: 0; }
+
 footer {
   border-top: 1px solid var(--hairline);
   padding: 26px 0 40px; color: var(--muted); font-size: 0.88rem;
 }
 
 @media (max-width: 860px) {
-  .slot, .home-grid { grid-template-columns: 1fr; }
+  .slot, .home-grid, .cfp-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 700px) {
   .wrap { padding: 0 32px; }
@@ -611,12 +620,23 @@ footer {
       <h2>Call for Papers</h2>
       <hr class="rule">
     </div>
-    <div class="prose">
-      <p class="note">Submissions for the 2026 conference closed on June 30, 2026. Authors were notified in August 2026.</p>
-      <p>The Darla Moore School of Business at the University of South Carolina, with generous sponsorship from H. Montague (Monty) Osteen, will host the 15th Fixed Income and Financial Institutions (FIFI) Conference on October 30&ndash;31, 2026 (Friday&ndash;Saturday), at the University of South Carolina in Columbia, SC. The Center for Financial Institutions (CFI) at the Darla Moore School organizes this annual event to promote cutting-edge research and education on financial institutions and related topics.</p>
-      <p>The conference aims to bring together researchers to foster dialogue on important issues related to fixed income and financial institutions. We broadly define financial institutions, and we welcome research on topics including fixed income, commercial and investment banks, asset management and mutual fund companies, short sellers, hedge funds, broker-dealers, insurance companies, and more.</p>
-      <p>Keynote speaker: Professor Uday Rajan, University of Michigan</p>
-      <p>Paper submissions: electronic copies of unpublished papers to <a href="mailto:fifi@moore.sc.edu">fifi@moore.sc.edu</a>, with a $75 submission fee. Submission deadline: June 30, 2026.</p>
+    <div class="cfp-grid">
+      <div class="prose">
+        <p class="note">Submissions for the 2026 conference closed on June 30, 2026. Authors were notified in August 2026.</p>
+        <p>The Darla Moore School of Business at the University of South Carolina, with generous sponsorship from H. Montague (Monty) Osteen, will host the 15th Fixed Income and Financial Institutions (FIFI) Conference on October 30&ndash;31, 2026 (Friday&ndash;Saturday), at the University of South Carolina in Columbia, SC. The Center for Financial Institutions (CFI) at the Darla Moore School organizes this annual event to promote cutting-edge research and education on financial institutions and related topics.</p>
+        <p>The conference aims to bring together researchers to foster dialogue on important issues related to fixed income and financial institutions. We broadly define financial institutions, and we welcome research on topics including fixed income, commercial and investment banks, asset management and mutual fund companies, short sellers, hedge funds, broker-dealers, insurance companies, and more.</p>
+      </div>
+      <aside class="card">
+        <h3>Key details</h3>
+        <dl class="factlist">
+          <div><dt>Dates</dt><dd>October 30&ndash;31, 2026 (Friday&ndash;Saturday)</dd></div>
+          <div><dt>Location</dt><dd>Darla Moore School of Business, University of South Carolina, Columbia, SC</dd></div>
+          <div><dt>Keynote</dt><dd>Professor Uday Rajan, University of Michigan</dd></div>
+          <div><dt>Submissions</dt><dd>Electronic copies of unpublished papers to <a href="mailto:fifi@moore.sc.edu">fifi@moore.sc.edu</a></dd></div>
+          <div><dt>Deadline</dt><dd>June 30, 2026 (closed)</dd></div>
+          <div><dt>Fee</dt><dd>$75 per submission</dd></div>
+        </dl>
+      </aside>
     </div>
   </div>
 </section>
