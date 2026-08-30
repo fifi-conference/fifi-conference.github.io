@@ -123,6 +123,7 @@ nav {
 }
 .hero .when { font-size: clamp(1.05rem, 2vw, 1.3rem); font-weight: 600; margin: 0 0 8px; }
 .hero .when .sep { color: rgba(255, 255, 255, 0.6); font-weight: 400; padding: 0 8px; }
+.hero .when .st-short { display: none; }
 .hero .facts { color: rgba(246, 240, 233, 0.87); margin: 0 0 30px; font-size: 1rem; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .btn {
@@ -270,6 +271,11 @@ footer {
   .hero-inner { padding: 54px 0 48px 20px; }
   .hero .hsep { display: none; }
   .hero .hl { display: block; }
+  .hero .when { font-size: 1rem; }
+  .hero .when .sep { padding: 0 6px; }
+  .hero .when .chunk { white-space: nowrap; }
+  .hero .when .st-long { display: none; }
+  .hero .when .st-short { display: inline; }
   #panel-home .panel { padding-top: 54px; }
 }
 @media print {
@@ -298,8 +304,8 @@ footer {
   <header class="hero">
     <div class="wrap hero-inner">
       <p class="eyebrow"><span class="hl">Darla Moore School of Business</span><span class="hsep"> · </span><span class="hl">University of South Carolina</span></p>
-      <h1>15th Fixed Income and Financial Institutions Conference</h1>
-      <p class="when">October 30–31, 2026 <span class="sep">·</span> Columbia, South Carolina</p>
+      <h1>15th Annual Fixed Income and Financial Institutions Conference</h1>
+      <p class="when"><span class="chunk">October 30–31, 2026</span> <span class="sep">·</span> <span class="chunk">Columbia, <span class="st-long">South Carolina</span><span class="st-short">SC</span></span></p>
       <p class="facts"><span class="hl">1.5 days · 8 sessions in 2 parallel tracks</span><span class="hsep"> · </span><span class="hl">20 papers · keynote by Uday Rajan</span></p>
       <div class="actions">
         <a class="btn solid" href="#program">View the program</a>
