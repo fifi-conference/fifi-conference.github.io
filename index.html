@@ -284,6 +284,13 @@ h2 {
 
 /* ---- Venue / Registration ---- */
 .maplink { font-weight: 600; }
+.reg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: stretch; }
+.reg-grid .card { display: flex; flex-direction: column; }
+.reg-grid .card p { margin: 0 0 14px; }
+.reg-grid .factlist { margin: 0 0 20px; }
+.reg-grid .btn { align-self: flex-start; margin-top: auto; border-color: var(--garnet); background: var(--garnet); color: #ffffff; }
+.reg-notes { margin-top: 26px; }
+@media (max-width: 860px) { .reg-grid { grid-template-columns: 1fr; } }
 
 /* ---- Call for Papers ---- */
 .cfp-grid { display: grid; grid-template-columns: 1.55fr 1fr; gap: 28px; align-items: start; }
@@ -607,9 +614,30 @@ footer {
       <h2>Registration &amp; Accommodation</h2>
       <hr class="rule">
     </div>
-    <div class="prose">
-      <p>Registration details will be announced.</p>
-      <p>A corporate hotel rate for conference participants will be available through the registration link.</p>
+    <div class="reg-grid">
+      <div class="card">
+        <h3>Conference registration</h3>
+        <p>Registration is handled through Eventbrite. Paper acceptance does not include conference admission.</p>
+        <dl class="factlist">
+          <div><dt>Fee</dt><dd>$300 through October 7, 2026</dd></div>
+          <div><dt>Late fee</dt><dd>$350 from October 8, 2026</dd></div>
+          <div><dt>Guest ticket</dt><dd>$50 for a guest at the Friday evening reception</dd></div>
+          <div><dt>Closes</dt><dd>October 16, 2026</dd></div>
+        </dl>
+        <a class="btn" href="https://www.eventbrite.com/e/2026-fixed-income-and-financial-institutions-tickets-1985316442924?aff=oddtdtcreator" target="_blank" rel="noopener">Register on Eventbrite</a>
+      </div>
+      <div class="card">
+        <h3>Hotel reservation</h3>
+        <p>A room block at the conference rate is held at the Courtyard Columbia Downtown at USC, <a href="https://maps.google.com/?q=630+Assembly+Street,+Columbia,+SC+29201">630 Assembly Street</a>, a 5-minute walk from the Moore School. Reserve through the booking link below.</p>
+        <dl class="factlist">
+          <div><dt>Rate</dt><dd>$162 per night</dd></div>
+          <div><dt>Book by</dt><dd>October 9, 2026</dd></div>
+        </dl>
+        <a class="btn" href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1777562261570&amp;key=GRP&amp;app=resvlink" target="_blank" rel="noopener">Book at the conference rate</a>
+      </div>
+    </div>
+    <div class="prose reg-notes">
+      <p class="note">The nearest airport is Columbia Metropolitan (CAE), about 15 minutes from campus.</p>
       <p class="note">For questions about the conference, please contact the organizing committee at <a href="mailto:fifi@moore.sc.edu">fifi@moore.sc.edu</a>.</p>
     </div>
   </div>
